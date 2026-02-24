@@ -4,9 +4,9 @@ import { ClipboardList, Search, PenTool, Dumbbell, Trophy } from "lucide-react";
 const steps = [
   { icon: ClipboardList, title: "Popuni upitnik", description: "Ispuni detaljnu anketu o sebi" },
   { icon: Search, title: "Analiza ciljeva", description: "Tvoja situacija i ciljevi se analiziraju" },
-  { icon: PenTool, title: "Personalizovan plan", description: "Kreira se plan samo za tebe" },
+  { icon: PenTool, title: "Personaliziran plan", description: "Kreira se plan samo za tebe" },
   { icon: Dumbbell, title: "Trening & praćenje", description: "Treniraš uz konstantnu podršku" },
-  { icon: Trophy, title: "Rezultati", description: "Vidljiva transformacija tela" },
+  { icon: Trophy, title: "Rezultati", description: "Vidljiva transformacija tijela" },
 ];
 
 const ProcessSteps = () => {

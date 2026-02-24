@@ -2,14 +2,29 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import heroBg from "@/assets/hero-bg.jpg";
 
+// Ubaci pravi video: stavi fajl u public/ i postavi putanju (npr. /hero-video.mp4)
+const HERO_VIDEO_SRC = ""; // npr. "/hero-video.mp4"
+
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})` }}
-      />
+      {/* Hero video (ako je HERO_VIDEO_SRC postavljen) ili pozadinska slika */}
+      {HERO_VIDEO_SRC ? (
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          src={HERO_VIDEO_SRC}
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster={heroBg}
+        />
+      ) : (
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${heroBg})` }}
+        />
+      )}
       <div className="absolute inset-0 hero-overlay" />
 
       {/* Content */}
@@ -20,7 +35,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold uppercase tracking-tight text-foreground mb-4"
         >
-          Promeni <span className="text-gradient">telo</span>. Promeni <span className="text-gradient">život</span>.
+          Promijeni <span className="text-gradient">tijelo</span>. Promijeni <span className="text-gradient">život</span>.
         </motion.h1>
 
         <motion.p

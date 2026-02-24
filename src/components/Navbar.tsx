@@ -9,6 +9,7 @@ const Navbar = () => {
   const links = [
     { to: "/", label: "Početna" },
     { to: "/program", label: "Program" },
+    { to: "/transformacije", label: "Transformacije" },
     { to: "/consultations", label: "Konsultacije" },
   ];
 

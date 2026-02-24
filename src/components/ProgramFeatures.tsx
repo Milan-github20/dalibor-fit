@@ -3,7 +3,7 @@ import { Dumbbell, Apple, BarChart3, MessageCircle } from "lucide-react";
 
 const features = [
   { icon: Dumbbell, text: "Strukturirani planovi treninga sa video uputstvima" },
-  { icon: Apple, text: "Smernice za ishranu i primeri obroka" },
+  { icon: Apple, text: "Smjernice za ishranu i primjeri obroka" },
   { icon: BarChart3, text: "Praćenje napretka" },
   { icon: MessageCircle, text: "Konstantna podrška tokom programa" },
 ];
@@ -18,7 +18,7 @@ const ProgramFeatures = () => {
           viewport={{ once: true }}
           className="font-heading text-3xl md:text-5xl font-bold uppercase text-center mb-16 text-foreground"
         >
-          Šta <span className="text-gradient">uključuje</span> program
+          Što <span className="text-gradient">uključuje</span> program
         </motion.h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">

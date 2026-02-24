@@ -5,11 +5,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const includes = [
-  "Personalizovan plan treninga",
-  "Smernice za ishranu sa primerima obroka",
-  "Video uputstva za sve vežbe",
-  "Trajanje programa: 8-12 nedelja",
-  "Praćenje napretka na nedeljnom nivou",
+  "Personaliziran plan treninga",
+  "Smjernice za ishranu sa primjerima obroka",
+  "Video uputstva za sve vježbe",
+  "Trajanje programa: 8-12 nedjelja",
+  "Praćenje napretka na nedjeljnom nivou",
 ];
 
 const Program = () => {
@@ -35,7 +35,7 @@ const Program = () => {
 
             <div className="bg-card border border-border rounded-lg p-8 mb-10">
               <h2 className="font-heading text-2xl font-semibold text-foreground uppercase mb-6">
-                Šta dobijaš
+                Što dobijaš
               </h2>
               <ul className="space-y-4">
                 {includes.map((item, index) => (
@@ -54,7 +54,7 @@ const Program = () => {
             </div>
 
             <div className="bg-card border border-primary/30 rounded-lg p-8 text-center">
-              <p className="text-muted-foreground text-sm uppercase tracking-wider mb-2">Cena programa</p>
+              <p className="text-muted-foreground text-sm uppercase tracking-wider mb-2">Cijena programa</p>
               <p className="font-heading text-5xl font-bold text-primary mb-6">€49</p>
               <button className="w-full sm:w-auto px-12 py-4 bg-primary text-primary-foreground font-heading text-lg uppercase tracking-wider font-semibold rounded hover:brightness-110 transition-all">
                 Kupi Program

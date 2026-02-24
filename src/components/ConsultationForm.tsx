@@ -38,7 +38,7 @@ const ConsultationForm = () => {
     console.log("Form data:", data);
     await new Promise((resolve) => setTimeout(resolve, 1500));
     setSubmitted(true);
-    toast.success("Upitnik je uspešno poslat!");
+    toast.success("Upitnik je uspješno poslan!");
   };
 
   if (submitted) {
@@ -121,7 +121,7 @@ const ConsultationForm = () => {
       {/* Goals */}
       <div>
         <label className={labelClass}>Ciljevi *</label>
-        <textarea {...register("goals")} className={inputClass} rows={3} placeholder="Šta želite da postignete?" />
+        <textarea {...register("goals")} className={inputClass} rows={3} placeholder="Što želite da postignete?" />
         {errors.goals && <p className={errorClass}>{errors.goals.message}</p>}
       </div>
 
@@ -148,9 +148,9 @@ const ConsultationForm = () => {
         <label className={labelClass}>Dostupno vreme za trening *</label>
         <select {...register("availableTime")} className={inputClass}>
           <option value="">Izaberi...</option>
-          <option value="2-3">2-3 puta nedeljno</option>
-          <option value="3-4">3-4 puta nedeljno</option>
-          <option value="5+">5+ puta nedeljno</option>
+          <option value="2-3">2-3 puta nedjeljno</option>
+          <option value="3-4">3-4 puta nedjeljno</option>
+          <option value="5+">5+ puta nedjeljno</option>
         </select>
         {errors.availableTime && <p className={errorClass}>{errors.availableTime.message}</p>}
       </div>
@@ -158,7 +158,7 @@ const ConsultationForm = () => {
       {/* Additional notes */}
       <div>
         <label className={labelClass}>Dodatne napomene</label>
-        <textarea {...register("additionalNotes")} className={inputClass} rows={3} placeholder="Bilo šta što smatrate da je bitno..." />
+        <textarea {...register("additionalNotes")} className={inputClass} rows={3} placeholder="Bilo što što smatrate da je bitno..." />
       </div>
 
       {/* Submit */}
