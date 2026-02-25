@@ -10,17 +10,17 @@ const faqItems = [
   {
     question: "Ne znam da li ću uspjeti da istrajem do cilja?",
     answer:
-      "Razumijem, vjerovatno si već pokušavao i nisi uspjeo, i zato je razumljivo da imaš strah. Baš zato sam ja tu za tebe da te vodim i ne dopustim da ne istraješ.",
+      "Razumijem, vjerovatno si već pokušavao i nisi uspio, i zato je razumljivo da imaš strah. Baš zato sam ja tu za tebe da te vodim i ne dopustim da ne istraješ.",
   },
   {
     question: "Da li ovaj program stvarno vrijedi?",
     answer:
-      "Ako tebi vredi da za 12 nedjelja izgubiš do 20 kilograma i da se osjećaš bolje, jače i imaš više samopouzdanja, onda vrijedi. Ako ti tako nešto nije bitno, onda ne vrijedi.",
+      "Ako tebi vrijedi da za 12 nedjelja izgubiš do 20 kilograma i da se osjećaš bolje, jače i imaš više samopouzdanja, onda vrijedi. Ako ti tako nešto nije bitno, onda ne vrijedi.",
   },
   {
     question: "Da li je ovaj program najbolje rješenje za mene?",
     answer:
-      "Ako si već pokušavao da skineš kilograme i nisi uspjeo, nervira te što se gojiš u predjelu stomaka, što se ne osjećaš dobro u svom tijelu i imaš manjak energije — onda definitivno jeste za tebe!",
+      "Ako si već pokušavao da skineš kilograme i nisi uspio, nervira te što se gojiš u predjelu stomaka, što se ne osjećaš dobro u svom tijelu i imaš manjak energije — onda definitivno jeste za tebe!",
   },
   {
     question: "Hoće li mi ovaj program stvarno pomoći da se riješim viška kilograma?",
@@ -41,7 +41,7 @@ const faqItems = [
 
 const FAQSection = () => {
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-muted/50">
       <div className="container mx-auto max-w-3xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
