@@ -169,8 +169,8 @@ const Transformacije = () => {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="left-2 md:left-4 h-10 w-10 border-border bg-card/90 hover:bg-card disabled:opacity-30" />
-              <CarouselNext className="right-2 md:right-4 h-10 w-10 border-border bg-card/90 hover:bg-card disabled:opacity-30" />
+              <CarouselPrevious className="left-2 md:left-4 h-10 w-10 border-border bg-card/90 text-foreground hover:bg-card hover:text-foreground disabled:opacity-30" />
+              <CarouselNext className="right-2 md:right-4 h-10 w-10 border-border bg-card/90 text-foreground hover:bg-card hover:text-foreground disabled:opacity-30" />
             </Carousel>
           </motion.div>
         </div>
