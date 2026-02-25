@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const CTASection = () => {
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-secondary">
       <div className="container mx-auto text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

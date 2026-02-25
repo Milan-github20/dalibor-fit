@@ -6,6 +6,7 @@ import BenefitCards from "@/components/BenefitCards";
 import ProgramFeatures from "@/components/ProgramFeatures";
 import TransformationsSection from "@/components/TransformationsSection";
 import ProcessSteps from "@/components/ProcessSteps";
+import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
@@ -20,6 +21,7 @@ const Index = () => {
       <ProgramFeatures />
       <TransformationsSection />
       <ProcessSteps />
+      <FAQSection />
       <CTASection />
       <Footer />
     </div>
