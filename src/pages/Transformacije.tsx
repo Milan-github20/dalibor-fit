@@ -77,22 +77,19 @@ const Transformacije = () => {
           <div className="absolute bottom-32 -right-16 w-64 h-64 rounded-full bg-primary/5 blur-3xl" />
         </div>
 
-        <div className="container mx-auto relative">
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
+        <div className="container mx-auto relative mt-5">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            className="font-heading text-4xl md:text-6xl font-bold uppercase text-center mb-4 text-foreground"
+            transition={{ duration: 0.6 }}
           >
-            <span className="text-gradient">Transformacije</span>
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="text-center text-muted-foreground text-lg mb-16 max-w-2xl mx-auto"
-          >
-            Priče ljudi koji su promijenili tijelo i navike uz DA Fitness program.
-          </motion.p>
+            <h1 className="font-heading text-4xl md:text-6xl font-bold uppercase text-center mb-4 text-foreground">
+              <span className="text-gradient">Transformacije</span>
+            </h1>
+            <p className="text-center text-muted-foreground text-lg mb-16 max-w-2xl mx-auto">
+              Priče ljudi koji su promijenili tijelo i navike uz DA Fitness program.
+            </p>
+          </motion.div>
 
           {/* Video + citat kartice (kao na referenti) */}
           <div className="space-y-24 md:space-y-32">
@@ -101,10 +98,9 @@ const Transformacije = () => {
               return (
                 <motion.article
                   key={story.videoId + story.name}
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-80px" }}
-                  transition={{ duration: 0.5 }}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.1 * (index + 1) }}
                   className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center ${isReversed ? "lg:flex-row-reverse" : ""}`}
                 >
                   {/* Video — uvijek prvi u mobilnom, na desktopu mijenja redoslijed */}
@@ -141,17 +137,17 @@ const Transformacije = () => {
 
           {/* Galerija slika — carousel s dugmićima za listanje */}
           <motion.h2
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
             className="font-heading text-2xl font-semibold uppercase text-foreground mt-24 mb-8"
           >
             Galerija
           </motion.h2>
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
             className="w-full max-w-7xl mx-auto mb-12 px-1 md:px-2"
           >
             <Carousel opts={{ align: "start", loop: true }}>

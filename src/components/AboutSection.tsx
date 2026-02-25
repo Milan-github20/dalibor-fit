@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
-
-// Stavi svoju fotografiju u folder public/ kao dalibor.jpg (ili promijeni putanju ispod)
-const TRAINER_IMAGE = "../public/dalibor.jpg";
+import daliborImage from "@/assets/dalibor.jpg";
 
 const AboutSection = () => {
   return (
@@ -53,7 +51,7 @@ const AboutSection = () => {
               className="relative w-full max-w-md aspect-[3/4] rounded-xl overflow-hidden border border-border shadow-2xl"
             >
               <img
-                src={TRAINER_IMAGE}
+                src={daliborImage}
                 alt="Dalibor Andrić — trener"
                 className="w-full h-full object-cover object-top"
                 onError={(e) => {
@@ -70,7 +68,7 @@ const AboutSection = () => {
               >
                 <span className="font-heading text-lg uppercase">Dalibor Andrić</span>
                 <span className="text-sm mt-2">
-                  Stavi <code className="bg-background/50 px-1 rounded">public/dalibor.jpg</code> ili <code className="bg-background/50 px-1 rounded">public/dalibor.webp</code>
+                  Slika trenera: <code className="bg-background/50 px-1 rounded">src/assets/dalibor.jpg</code>
                 </span>
               </div>
             </motion.div>

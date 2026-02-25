@@ -22,7 +22,7 @@ const ProcessSteps = () => {
           Kako <span className="text-gradient">funkcioniše</span>
         </motion.h2>
 
-        <div className="flex flex-col md:flex-row items-start justify-center gap-4 md:gap-0">
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-6 md:gap-0">
           {steps.map((step, index) => (
             <motion.div
               key={index}
@@ -30,7 +30,7 @@ const ProcessSteps = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.12 }}
-              className="flex flex-col items-center text-center flex-1 relative px-4"
+              className="flex flex-col items-center text-center flex-1 relative px-2 md:px-4"
             >
               <div className="w-16 h-16 rounded-full bg-primary/10 border-2 border-primary flex items-center justify-center mb-4">
                 <step.icon className="w-7 h-7 text-primary" />

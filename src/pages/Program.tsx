@@ -17,12 +17,13 @@ const Program = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      <section className="pt-32 section-padding">
-        <div className="container mx-auto max-w-3xl">
+      <section className="pt-28 md:pt-36 section-padding">
+        <div className="container mx-auto max-w-3xl mt-5">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            className="text-center md:text-left"
           >
             <h1 className="font-heading text-4xl md:text-6xl font-bold uppercase mb-6 text-foreground">
               Online <span className="text-gradient">Program</span>
@@ -33,11 +34,11 @@ const Program = () => {
               jasno vođenje i konkretne rezultate.
             </p>
 
-            <div className="bg-card border border-border rounded-lg p-8 mb-10">
+            <div className="bg-card border border-border rounded-lg p-6 md:p-8 mb-10 text-center md:text-left">
               <h2 className="font-heading text-2xl font-semibold text-foreground uppercase mb-6">
                 Što dobijaš
               </h2>
-              <ul className="space-y-4">
+              <ul className="space-y-4 inline-block text-left">
                 {includes.map((item, index) => (
                   <motion.li
                     key={index}

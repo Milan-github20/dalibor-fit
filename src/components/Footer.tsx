@@ -4,8 +4,9 @@ const Footer = () => {
   return (
     <footer className="bg-card border-t border-border py-10">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
-        <Link to="/" className="font-heading text-xl font-bold tracking-wider text-primary shrink-0">
-          DA FITNESS
+        <Link to="/" className="font-heading text-xl font-bold tracking-wider text-primary shrink-0 flex items-center">
+          <img src="/logo.png" alt="DA Fitness" className="h-8 w-auto object-contain" onError={(e) => { e.currentTarget.style.display = "none"; const next = e.currentTarget.nextElementSibling as HTMLElement; if (next) next.classList.remove("hidden"); }} />
+          <span className="hidden">DA FITNESS</span>
         </Link>
         <div className="flex flex-wrap justify-center gap-6 md:flex-1 md:justify-center min-w-0">
           <Link to="/" className="text-muted-foreground hover:text-primary text-sm transition-colors">Početna</Link>

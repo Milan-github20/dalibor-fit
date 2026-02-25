@@ -9,7 +9,7 @@ const Consultations = () => {
       <Navbar />
 
       <section className="pt-32 section-padding">
-        <div className="container mx-auto max-w-3xl">
+        <div className="container mx-auto max-w-3xl mt-5">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
